@@ -1,0 +1,86 @@
+<div class="body-wrapper"><!-- MENU MOBILE-->
+    <div class="wrapper-mobile-nav">
+        <div class="header-topbar">
+            
+        </div>
+      <div class="header-main">
+            <div class="menu-mobile">
+                <ul class="nav-links nav navbar-nav">
+                     <?php  $lien= '<front>'; ?>
+                    <li class="dropdown"> <a href="<?php print url($lien) ; ?>" class="main-menu"><span class="text">Accueil</span></a><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span>
+                    </li>
+                    <li><a href="<?php print url('/aboutfav') ; ?>" class="main-menu"><span class="text">À propos </span></a></li>
+                    <li class="dropdown active"><a href="<?php print url('/travels') ; ?>" class="main-menu"><span class="text">Sejours</span></a><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span>
+                    </li>
+                    <li class="dropdown"><a href="<?php print url('/tourislamic') ; ?>" class="main-menu"><span class="text">hajj_omra</span></a><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span>
+                    </li>
+                    <li class="dropdown"><a href="<?php print url('/hotel') ; ?>" class="main-menu"><span class="text">Hôtels</span></a><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span>
+                    </li>
+                    <li><a href="contact.html" class="main-menu"><span class="text">Contactez-nous</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- WRAPPER CONTENT-->
+    <div class="wrapper-content"><!-- HEADER-->
+        <header>
+            <div class="bg-transparent">
+                
+               
+<div class="header-main">
+                    <div class="container">
+                        <div class="header-main-wrapper">
+                            <div class="hamburger-menu">
+                                <div class="hamburger-menu-wrapper">
+                                    <div class="icons"></div>
+                                </div>
+                            </div>
+                            <div class="navbar-header">
+                                <div class="logo"><a href="<?php print url($lien) ;?>" class="header-logo"><img src="<?php print $data['logo'] ; ?>" alt=""   style="padding-bottom:35px;padding-top:15px;"/></a></div>
+                            </div>
+                            <nav class="navigation">
+                                <ul class="nav-links nav navbar-nav">
+                                    <li class="dropdown active"><a href="<?php print url($lien) ; ?>" class="main-menu"><span class="text">Accueil</span><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span></a>
+            
+                                    </li>
+                                    <li><a href="<?php print url('/aboutfav') ; ?>" class="main-menu"><span class="text">À propos </span></a></li>
+                                   
+                                   <li class="dropdown"><a href="<?php print url('/travels') ; ?>" class="main-menu"><span class="text"> Séjours</span><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span></a>
+                                                                           </li>
+                                       <li class="dropdown"><a href="<?php print url('/tourislamic') ; ?>" class="main-menu"><span class="text">Hajj_Omra</span><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span></a>
+                                                                           </li>   
+                                       <li class="dropdown"><a href="<?php print url('hotel') ; ?>" class="main-menu"><span class="text">Hôtels</span><span class="icons-dropdown"><i class="fa fa-angle-down"></i></span></a>
+                                    </li>
+                                  
+                                    <li><a href="<?php print url('contactfav') ; ?>" class="main-menu"><span class="text">Contactez-Nous</span></a></li>
+                                                                    </ul>
+                                
+                            </nav>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+                  <!-- WRAPPER-->
+        <div id="wrapper-content"><!-- MAIN CONTENT-->
+            <div class="main-content">
+                  <?php $src = image_style_url('slide_1600x500',$data['travel']->field_image['und'][0]['filename']) ?>
+                <section class="page-banner tour-view "  style="background-image : url('<?php print $src ; ?>')" >
+                    <div class="container">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-content">
+                                <ol class="breadcrumb">
+                                    <li><a href="<?php print url($lien) ; ?>" class="link home">Accueil</a></li>
+                                    <li><a href="<?php print url('/travels') ; ?>" class="link">Séjours</a></li>
+                                    <li class="active"><a href="#" class="link"> <?php print $data['travel']->title['und']['value']; ?> </a></li>
+                                </ol>
+                                <div class="clearfix"></div>
+                                <h2 class="captions"> <?php print $data['travel']->title['und'][0]['value']; ?> </h2>
+
+                                <div class="price"> <span class="text">from</span> <span class="number"> <?php print $data['travel']->field_price['und'][0]['value']; ?> </span><sup class="unit">MAD</sup></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>

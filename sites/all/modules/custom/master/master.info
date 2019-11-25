@@ -1,0 +1,8 @@
+name = Master
+description = master module
+package = project
+core = 7.x
+
+stylesheets[all][] = assets/libs/fancybox/jquery.fancybox.css
+scripts[] = assets/libs/fancybox/jquery.fancybox.js
+scripts[] = assets/js/scripts.js

@@ -1,0 +1,47 @@
+name= Mon Theme
+description = mon premier theme
+core = 7.x
+
+;CSS
+stylesheets[all][]=http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900
+stylesheets[all][]=http://fonts.googleapis.com/css?family=Montserrat:400,700
+stylesheets[all][]=assets/font/font-icon/font-awesome/css/font-awesome.css
+stylesheets[all][]=assets/font/font-icon/font-flaticon/flaticon.css
+stylesheets[all][]=assets/libs/bootstrap/css/bootstrap.min.css
+stylesheets[all][]=assets/libs/animate/animate.css
+stylesheets[all][]=assets/libs/slick-slider/slick.css
+stylesheets[all][]=assets/libs/slick-slider/slick-theme.css
+stylesheets[all][]=assets/libs/selectbox/css/jquery.selectbox.css
+stylesheets[all][]=assets/libs/please-wait/please-wait.css
+stylesheets[all][]=assets/css/layout.css
+stylesheets[all][]=assets/css/components.css
+stylesheets[all][]=assets/css/responsive.css
+stylesheets[all][]=assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css
+
+;JS
+scripts[] = assets/libs/bootstrap/js/bootstrap.min.js
+scripts[] = assets/libs/smooth-scroll/jquery-smoothscroll.js
+scripts[] = assets/libs/wow-js/wow.min.js
+scripts[] = assets/libs/slick-slider/slick.min.js
+scripts[] = assets/libs/selectbox/js/jquery.selectbox-0.2.js
+scripts[] = assets/libs/please-wait/please-wait.min.js
+scripts[] = assets/js/main.js
+scripts[] = assets/js/pages/home-page.js
+scripts[] = assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js
+
+
+
+
+;Regions
+regions[sidebar_first]  = First Sidebar
+regions[header]         = Header
+regions[preface_first]  = Preface First
+regions[preface_middle] = Preface Middle
+regions[preface_last]   = Preface Last
+regions[content_top]    = Content Top
+regions[content]        = Content
+regions[help]           = Help
+regions[footer]         = Footer
+regions[footer_first]   = First Bottom
+regions[footer_second]  = Second Bottom
+regions[footer_third]   = Third Bottom
